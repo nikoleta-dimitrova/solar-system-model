@@ -1,6 +1,6 @@
 :root{
     --orbit-radius: 40rem;
-    --sun-size: 13rem;
+    --sun-size: 18rem;
     --preview-window-width: 50vw;
     --preview-window-height: 95vh;
 }
@@ -26,8 +26,6 @@ body {
     position: absolute;
     width: var(--sun-size);
     height:  var(--sun-size);
-    background-color: rgb(207, 180, 5);
-    border-radius: 50%;
 }
 
 .orbit {
@@ -37,15 +35,7 @@ body {
 }
 
 .planet {
-    border-radius: 50%;
-    background-color: red;
     position: absolute;
-    animation: myOrbit 4s linear infinite;
-}
-
-@keyframes myOrbit {
-    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
 .orbit:nth-of-type(1) .planet {
@@ -57,50 +47,50 @@ body {
 }
 .orbit:nth-of-type(2) .planet {
     animation: orbit2 2.6s linear infinite;
-    margin-top: 36rem;
-    margin-left: 36rem;
+    margin-top: 32rem;
+    margin-left: 32rem;
     width: calc(var(--sun-size) * 0.8);
     height: calc(var(--sun-size) * 0.8);
 }
 .orbit:nth-of-type(3) .planet {
     animation: orbit3 4.1s linear infinite;
-    margin-top: 54rem;
-    margin-left: 54rem;
+    margin-top: 53rem;
+    margin-left: 53rem;
     width: calc(var(--sun-size) * 0.9);
     height: calc(var(--sun-size) * 0.9);
 }
 .orbit:nth-of-type(4) .planet {
     animation: orbit4 7.8s linear infinite;
-    margin-top: 77rem;
-    margin-left: 77rem;
+    margin-top: 76rem;
+    margin-left: 76rem;
     width: calc(var(--sun-size) * 0.4);
     height: calc(var(--sun-size) * 0.4);
 }
 .orbit:nth-of-type(5) .planet {
     animation: orbit5 49.8s linear infinite;
-    margin-top: 97rem;
-    margin-left: 97rem;
+    margin-top: 93rem;
+    margin-left: 93rem;
     width: calc(var(--sun-size) * 1.8);
     height: calc(var(--sun-size) * 1.8);
 }
 .orbit:nth-of-type(6) .planet {
-    animation: orbit6 120.3s linear infinite;
-    margin-top: 132rem;
-    margin-left: 132rem;
-    width: calc(var(--sun-size) * 1.1);
+    animation: orbit6 12.3s linear infinite;
+    margin-top: 140rem;
+    margin-left: 130rem;
+    width: calc(var(--sun-size) * 2.2);
     height: calc(var(--sun-size) * 1.1);
 }
 .orbit:nth-of-type(7) .planet {
-    animation: orbit7 280.4s linear infinite;
-    margin-top: 166rem;
-    margin-left: 166rem;
-    width: calc(var(--sun-size) * 0.6);
-    height: calc(var(--sun-size) * 0.6);
+    animation: orbit7 28.4s linear infinite;
+    margin-top: 170rem;
+    margin-left: 165rem;
+    width: calc(var(--sun-size) * 1.5);
+    height: calc(var(--sun-size) * 1);
 }
 .orbit:nth-of-type(8) .planet {
     animation: orbit8 800.6s linear infinite;
-    margin-top: 195rem;
-    margin-left: 195rem;
+    margin-top: 193rem;
+    margin-left: 193rem;
     width: calc(var(--sun-size) * 0.7);
     height: calc(var(--sun-size) * 0.7);
 
@@ -127,12 +117,12 @@ body {
     height: calc(5.5 * var(--orbit-radius));
 }
 .orbit:nth-of-type(6) {
-    width: calc(7 * var(--orbit-radius));
-    height: calc(7 * var(--orbit-radius));
+    width: calc(7.5 * var(--orbit-radius));
+    height: calc(7.5 * var(--orbit-radius));
 }
 .orbit:nth-of-type(7) {
-    width: calc(8.5 * var(--orbit-radius));
-    height: calc(8.5 * var(--orbit-radius));
+    width: calc(9 * var(--orbit-radius));
+    height: calc(9 * var(--orbit-radius));
 }
 .orbit:nth-of-type(8) {
     width: calc(10 * var(--orbit-radius));
@@ -160,12 +150,12 @@ body {
     to   { transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 5.5 / 2)) rotate(-360deg); }
 }
 @keyframes orbit6 {
-    from { transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 7 / 2)) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 7 / 2)) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 7.5 / 2)) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 7.5 / 2)) rotate(-360deg); }
 }
 @keyframes orbit7 {
-    from { transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 8.5 / 2)) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 8.5 / 2)) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 9 / 2)) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 9 / 2)) rotate(-360deg); }
 }
 @keyframes orbit8 {
     from { transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 10 / 2)) rotate(0deg); }

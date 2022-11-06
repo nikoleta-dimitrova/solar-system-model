@@ -2,7 +2,7 @@ var solarSystem = document.getElementById("solar-system");
 var orbits = document.querySelectorAll(".orbit");
 var sun = document.getElementById("sun");
 
-let zoomLevels = [0.08, 0.1, 0.2 ,0.4, 0.6, 0.8, 1];
+let zoomLevels = [0.15, 0.2 ,0.4, 0.6, 0.8, 1];
 let currentZoom = 3;
 
 const zoomOut = () => {
