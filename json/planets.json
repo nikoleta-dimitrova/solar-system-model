@@ -1,0 +1,65 @@
+[
+	{
+		"id": "sun",
+		"name": "The Sun",
+		"size": "696,340 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "mercury",
+		"name": "Mercury",
+		"size": "2,439.7 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "venus",
+		"name": "Venus",
+		"size": "6,051.8 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "earth",
+		"name": "Earth",
+		"size": "6,371 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "mars",
+		"name": "Mars",
+		"size": "3,389.5 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "jupiter",
+		"name": "Jupiter",
+		"size": "69,911 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "saturn",
+		"name": "Saturn",
+		"size": "58,232 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "uranus",
+		"name": "Uranus",
+		"size": "25,362 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	},
+	{
+		"id": "neptune",
+		"name": "Neptune",
+		"size": "24,622 km",
+		"info": "",
+		"image": "./assets/images/Sun.png"
+	}
+]
