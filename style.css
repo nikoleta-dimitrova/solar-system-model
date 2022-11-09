@@ -1,33 +1,54 @@
+@font-face {
+    font-family: Nulshock;
+    src: url("./assets/fonts/nulshock.otf");
+}
+
 :root {
     --orbit-radius: 40rem;
     --sun-size: 18rem;
-    --preview-window-width: 50vw;
+    --preview-window-width: 47.5vw;
     --preview-window-height: 95vh;
 }
 
 body {
     background-image: linear-gradient(to right top, #1b181f, #1a161f, #18141f, #17111f, #160e1f, #160c20, #150921, #150722, #150524, #150326, #150227, #150029);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: var(--preview-window-height);
+    width: var(--preview-window-width);
+    border: 1px solid wheat;
+}
+
+#title {
+    text-align: center;
+    font-family: Nulshock, sans-serif;
+    color: white;
+    font-size: 2rem;
 }
 
 #solar-system {
     position: relative;
-    margin-top: 2.5vh;
     height: var(--preview-window-height);
     width: var(--preview-window-width);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    border: 1px solid wheat;
 }
 
 #sun {
     position: absolute;
     width: var(--sun-size);
     height: var(--sun-size);
-    pointer-events: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 .orbit {
@@ -38,10 +59,17 @@ body {
 
 .planet {
     position: absolute;
-    pointer-events: none;
+}
+
+#sun,
+.planet,
+.orbit {
+    -webkit-user-drag: none;
+    user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
-    user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
 .orbit:nth-of-type(1) .planet {
@@ -85,7 +113,7 @@ body {
 }
 
 .orbit:nth-of-type(6) .planet {
-    animation: orbit6 12.3s linear infinite;
+    animation: orbit6 120.3s linear infinite;
     margin-top: 142rem;
     margin-left: 132rem;
     width: calc(var(--sun-size) * 2.2);
@@ -227,4 +255,51 @@ body {
     to {
         transform: rotate(360deg) translateX(calc(var(--orbit-radius) * 10.5 / 2)) rotate(-360deg);
     }
+}
+
+.planets-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    width: 85%;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.planet-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.planet-card img {
+    width: 50%;
+}
+
+.planet-card span {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.planet-details {
+    display: flex;
+}
+
+.planet-speed,
+.planet-size {
+    display: flex;
+    margin-inline: .2rem;
+}
+
+.planet-speed img, .planet-size img {
+    width: 1rem;
+    margin-right: .2rem;
+}
+
+.planet-speed span, .planet-size span {
+    font-size: .8rem;
 }
