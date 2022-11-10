@@ -1,9 +1,10 @@
 class Planet {
 
-    constructor(id, name, size, info, image) {
+    constructor(id, name, size, speed, info, image) {
         this.id = id;
         this.name = name;
         this.size = size;
+        this.speed = speed
         this.info = info;
         this.image = image
     }
@@ -20,6 +21,13 @@ class Planet {
     }
     getSize() {
         return this.size;
+    }
+
+    setSpeed(speed) {
+        this.speed = speed
+    }
+    getSpeed() {
+        return this.speed;
     }
 
     setInfo(info) {
@@ -53,19 +61,25 @@ const init = () => {
     loadPlanets(function (response) {
         var planets = JSON.parse(response);
         planets.forEach(planet => {
-            var newPlanet = new Planet(planet.id, planet.name, planet.size, planet.info, planet.image)
+            var newPlanet = new Planet(planet.id, planet.name, planet.size, planet.speed, planet.info, planet.image)
             var container = createPlanetCard(newPlanet);
             document.querySelector(".planets-container").appendChild(container);
         })
     })
 }
 
+const togglePopup = (planet) => {
+    console.log(planet.name);
+}
+
 const createPlanetCard = (planet) => {
     const container = document.createElement("div");
     container.classList.add('planet-card');
     const containerImage = document.createElement("img");
+    containerImage.classList.add("planet-image")
     containerImage.src = planet.image;
     const containerName = document.createElement("span");
+    containerName.classList.add("planet-name");
     containerName.textContent = planet.name;
 
     const planetDetails = document.createElement("div");
@@ -74,7 +88,7 @@ const createPlanetCard = (planet) => {
     const planetSize = document.createElement("div");
     planetSize.classList.add('planet-size');
     const sizeImg = document.createElement("img");
-    sizeImg.src="./assets/images/vector-svg-graphic-11-512.webp";
+    sizeImg.src = "./assets/images/radius.png";
     const planetSizeValue = document.createElement("span");
     planetSizeValue.textContent = planet.size;
     planetSize.appendChild(sizeImg)
@@ -86,9 +100,13 @@ const createPlanetCard = (planet) => {
     const speedImg = document.createElement("img");
     speedImg.src="./assets/images/speedometer.svg";
     const planetSpeedValue = document.createElement("span");
-    planetSpeedValue.textContent = planet.size;
+    planetSpeedValue.textContent = planet.speed;
     planetSpeed.appendChild(speedImg)
     planetSpeed.appendChild(planetSpeedValue);
+
+    const arrow = document.createElement("img");
+    arrow.classList.add("arrow-img");
+    arrow.src="./assets/images/arrow.svg"
 
 
     planetDetails.appendChild(planetSize);
@@ -97,83 +115,13 @@ const createPlanetCard = (planet) => {
     container.appendChild(containerImage);
     container.appendChild(containerName);
     container.appendChild(planetDetails);
+    container.appendChild(arrow);
+
+    container.addEventListener('click', () => {
+        togglePopup(planet)
+    });
 
     return container;
 }
 
 window.onload = init();
-
-var solarSystem = document.getElementById("solar-system");
-var orbits = document.querySelectorAll(".orbit");
-var sun = document.getElementById("sun");
-
-let zoomLevels = [0.08, 0.1, 0.15, 0.2, 0.4, 0.6, 0.8, 1];
-let currentZoom = 3;
-var _startX = 0;
-var _startY = 0;
-var _offsetXSun = 0;
-var _offsetYSun = 0;
-let _offsetXOrbits = [];
-let _offSetYOrbits = [];
-
-const zoomOut = () => {
-    if (currentZoom > 0) {
-        currentZoom--;
-        orbits.forEach(orbit => {
-            orbit.style.scale = zoomLevels[currentZoom];
-        });
-        sun.style.scale = zoomLevels[currentZoom];
-    }
-}
-
-const zoomIn = () => {
-    if (currentZoom < zoomLevels.length - 1) {
-        currentZoom++;
-        orbits.forEach(orbit => {
-            orbit.style.scale = zoomLevels[currentZoom];
-        });
-        sun.style.scale = zoomLevels[currentZoom];
-    }
-}
-
-const OnMouseMove = (event) => {
-    for (var i = 0; i < orbits.length; i++) {
-        orbits[i].style.left = (_offsetXOrbits[i] + event.clientX - _startX) + 'px';
-        orbits[i].style.top = (_offsetYOrbits[i] + event.clientY - _startY) + 'px';
-    }
-    sun.style.left = (_offsetXSun + event.clientX - _startX) + 'px';
-    sun.style.top = (_offsetYSun + event.clientY - _startY) + 'px';
-}
-
-const mouseUp = () => {
-    solarSystem.onmousemove = null;
-    _offsetXOrbits = [];
-    _offsetYOrbits = [];
-}
-
-solarSystem.addEventListener('wheel', (e) => {
-    setTimeout(() => {
-        if (e.deltaY < 0) {
-            zoomIn()
-        }
-        else if (e.deltaY > 0) {
-            zoomOut()
-        }
-    }, 200);
-})
-
-solarSystem.addEventListener('mousedown', (event) => {
-    solarSystem.onmousemove = OnMouseMove
-    solarSystem.onmouseleave = mouseUp
-    _startX = event.clientX;
-    _startY = event.clientY;
-    orbits.forEach(orbit => {
-        _offsetXOrbits.push(orbit.offsetLeft);
-        _offsetYOrbits.push(orbit.offsetTop);
-    })
-    _offsetXSun = sun.offsetLeft;
-    _offsetYSun = sun.offsetTop;
-});
-
-solarSystem.addEventListener('mouseup', mouseUp)
-

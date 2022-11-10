@@ -2,7 +2,7 @@
 	{
 		"id": "sun",
 		"name": "The Sun",
-		"size": "696,340 km",
+		"size": "696,340 km²",
 		"speed": "230 km/s",
 		"info": "",
 		"image": "./assets/images/Sun.png"
@@ -10,7 +10,7 @@
 	{
 		"id": "mercury",
 		"name": "Mercury",
-		"size": "2,439.7 km",
+		"size": "2,439.7 km²",
 		"speed": "47.36 km/s",
 		"info": "",
 		"image": "./assets/images/Mercury.png"
@@ -18,7 +18,7 @@
 	{
 		"id": "venus",
 		"name": "Venus",
-		"size": "6,051.8 km",
+		"size": "6,051.8 km²",
 		"speed": "35.02 km/s",
 		"info": "",
 		"image": "./assets/images/Venus.png"
@@ -26,7 +26,7 @@
 	{
 		"id": "earth",
 		"name": "Earth",
-		"size": "6,371 km",
+		"size": "6,371 km²",
 		"speed": "29.78 km/s",
 		"info": "",
 		"image": "./assets/images/Earth.png"
@@ -34,7 +34,7 @@
 	{
 		"id": "mars",
 		"name": "Mars",
-		"size": "3,389.5 km",
+		"size": "3,389.5 km²",
 		"speed": "24.07 km/s",
 		"info": "",
 		"image": "./assets/images/Mars.png"
@@ -42,7 +42,7 @@
 	{
 		"id": "jupiter",
 		"name": "Jupiter",
-		"size": "69,911 km",
+		"size": "69,911 km²",
 		"speed": "13.07 km/s",
 		"info": "",
 		"image": "./assets/images/Jupiter.png"
@@ -50,7 +50,7 @@
 	{
 		"id": "saturn",
 		"name": "Saturn",
-		"size": "58,232 km",
+		"size": "58,232 km²",
 		"speed": "9.68 km/s",
 		"info": "",
 		"image": "./assets/images/Saturn.png"
@@ -58,7 +58,7 @@
 	{
 		"id": "uranus",
 		"name": "Uranus",
-		"size": "25,362 km",
+		"size": "25,362 km²",
 		"speed": "6.80 km/s",
 		"info": "",
 		"image": "./assets/images/Uranus.png"
@@ -66,7 +66,7 @@
 	{
 		"id": "neptune",
 		"name": "Neptune",
-		"size": "24,622 km",
+		"size": "24,622 km²",
 		"speed": "5.43 km/s",
 		"info": "",
 		"image": "./assets/images/Neptune.png"
