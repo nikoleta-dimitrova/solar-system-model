@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #info {
@@ -365,3 +366,76 @@ body {
     right: 1rem;
     height: 2rem;
 }
+
+#planet-popup {
+    display: none;
+    position: absolute;
+    width: 200vw;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.planet-popup-container{
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    border-radius: .5rem;
+    margin-inline: auto;
+    background-color: #23043f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;   
+}
+
+.planet-main-info {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.planet-main-info img{
+    height: 50%;
+}
+
+#popup-description {
+    width: 100%;
+}
+
+#close {
+    position: absolute;
+    z-index: 1000;
+    right: 2rem;
+    top: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  #close:hover {
+    opacity: 1;
+  }
+
+  #close:before, #close:after {
+    position: absolute;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #close:before {
+    transform: rotate(45deg);
+  }
+
+  #close:after {
+    transform: rotate(-45deg);
+  }
+  

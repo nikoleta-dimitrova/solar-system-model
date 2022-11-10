@@ -34,7 +34,7 @@ class Planet {
         this.info = info
     }
     getInfo() {
-       return this.info;
+        return this.info;
     }
 
     setImage(image) {
@@ -68,8 +68,21 @@ const init = () => {
     })
 }
 
-const togglePopup = (planet) => {
-    console.log(planet.name);
+const popup = document.getElementById("planet-popup");
+const popupImg = document.getElementById("popup-image");
+const popupTitle = document.getElementById("popup-title");
+const popupDescription = document.getElementById("popup-description");
+const closePopupButton = document.getElementById("close");
+
+closePopupButton.addEventListener('click', () => {
+    popup.style.display = "none";
+})
+
+const openPopup = (planet) => {
+        popupImg.src = planet.image;
+        popupTitle.textContent = planet.name;
+        popupDescription.textContent = planet.info;
+        popup.style.display = "block";
 }
 
 const createPlanetCard = (planet) => {
@@ -98,7 +111,7 @@ const createPlanetCard = (planet) => {
     const planetSpeed = document.createElement("div");
     planetSpeed.classList.add('planet-speed');
     const speedImg = document.createElement("img");
-    speedImg.src="./assets/images/speedometer.svg";
+    speedImg.src = "./assets/images/speedometer.svg";
     const planetSpeedValue = document.createElement("span");
     planetSpeedValue.textContent = planet.speed;
     planetSpeed.appendChild(speedImg)
@@ -106,7 +119,7 @@ const createPlanetCard = (planet) => {
 
     const arrow = document.createElement("img");
     arrow.classList.add("arrow-img");
-    arrow.src="./assets/images/arrow.svg"
+    arrow.src = "./assets/images/arrow.svg"
 
 
     planetDetails.appendChild(planetSize);
@@ -118,7 +131,7 @@ const createPlanetCard = (planet) => {
     container.appendChild(arrow);
 
     container.addEventListener('click', () => {
-        togglePopup(planet)
+        openPopup(planet)
     });
 
     return container;

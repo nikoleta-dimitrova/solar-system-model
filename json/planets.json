@@ -4,7 +4,7 @@
 		"name": "The Sun",
 		"size": "696,340 km²",
 		"speed": "230 km/s",
-		"info": "",
+		"info": "Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. The Sun is the largest object in our solar system. The Sun’s volume would need 1.3 million Earths to fill it. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The hottest part of the Sun is its core, where temperatures top 27 million degrees Fahrenheit (15 million degrees Celsius). The Sun’s activity, from its powerful eruptions to the steady stream of charged particles it sends out, influences the nature of space throughout the solar system.",
 		"image": "./assets/images/Sun.png"
 	},
 	{
@@ -12,7 +12,7 @@
 		"name": "Mercury",
 		"size": "2,439.7 km²",
 		"speed": "47.36 km/s",
-		"info": "",
+		"info": "Mercury, Innermost planet of the solar system. Its average distance from the Sun is about 36 million mi (58 million km), but its highly elliptical orbit carries it 7.5 million mi (12 million km) nearer to and farther from the Sun. It is the smallest major planet, having a diameter of about 3,030 mi (4,880 km) and a mass about one-eighteenth of Earth’s. With the shortest period of revolution (only 88 Earth days) and the highest average orbital speed (30 mi/sec [48 km/sec]) of any planet, it is aptly named after the Roman fleet-footed messenger god. It spins very slowly, making one complete rotation relative to the stars every 59 Earth days, while its solar day (from one sunrise to the next) is 176 Earth days, owing to its revolution around the Sun.",
 		"image": "./assets/images/Mercury.png"
 	},
 	{
@@ -20,7 +20,7 @@
 		"name": "Venus",
 		"size": "6,051.8 km²",
 		"speed": "35.02 km/s",
-		"info": "",
+		"info": "Venus, Second major planet from the Sun. Named for the Roman goddess, Venus is, after the Moon, the most brilliant natural object in the night sky. Venus comes closer to Earth—about 26 million mi (42 million km)—than any other planet. Its orbit around the Sun is nearly circular at a distance of about 67 million mi (108 million km) and takes 225 days; its rotation, in retrograde motion, takes even longer (243 days). As viewed from Earth, Venus undergoes phase changes similar to the Moon’s, going through one cycle of phases in 584 days. It is seen only near sunrise or sunset and has long been known as both the morning star and the evening star. Venus is a near twin of Earth in size and mass but is completely enveloped by thick clouds of concentrated sulfuric acid droplets.",
 		"image": "./assets/images/Venus.png"
 	},
 	{
@@ -28,7 +28,7 @@
 		"name": "Earth",
 		"size": "6,371 km²",
 		"speed": "29.78 km/s",
-		"info": "",
+		"info": "Earth, Third planet in distance outward from the Sun. Believed to be about 4.56 billion years old, it is some 149,600,000 km (92,960,000 mi) from the Sun. It makes one revolution, or one complete orbit of the Sun, in about 365.25 days. As it revolves, it rotates on its axis once every 23 hours 56 minutes 4 seconds. The fifth largest planet of the solar system, it has an equatorial circumference of 40,076 km (24,902 mi). Its total surface area is roughly 509,600,000 sq km (197,000,000 sq mi), of which about 71% is water. Earth’s atmosphere consists of a mixture of gases, chiefly nitrogen and oxygen. Its only natural satellite, the Moon, orbits the planet at a distance of about 384,400 km (238,900 mi).",
 		"image": "./assets/images/Earth.png"
 	},
 	{
@@ -36,7 +36,7 @@
 		"name": "Mars",
 		"size": "3,389.5 km²",
 		"speed": "24.07 km/s",
-		"info": "",
+		"info": "Mars, Fourth planet from the Sun, named after the Roman god of war. Its mean distance from the Sun is 228 million km (142 million mi). Its day is 24 hours 37 minutes and its year about 687 Earth days. It has two small moons, Phobos and Deimos. Mars’s equatorial diameter is 3,396 km (2,110 mi), about half that of Earth. Its mass is about one-tenth of Earth’s and its surface gravity about one-third as strong. No magnetic field has been detected on Mars, suggesting, as does its low density, the absence of a substantial metallic core. Like Earth, it has seasons and an atmosphere, but its average daytime surface temperature is only −10 °F (−20 °C). Mars’s thin atmosphere is mainly carbon dioxide, with some nitrogen and argon and traces of water vapour.",
 		"image": "./assets/images/Mars.png"
 	},
 	{
@@ -44,7 +44,7 @@
 		"name": "Jupiter",
 		"size": "69,911 km²",
 		"speed": "13.07 km/s",
-		"info": "",
+		"info": "Jupiter, Fifth planet from the Sun, the largest nonstellar object in the solar system. It has 318 times the mass and more than 1,400 times the volume of Earth. Its enormous mass gives it nearly 2.5 times the gravity of Earth (measured at the top of Jupiter’s atmosphere), and it exerts strong effects on other members of the solar system. It is responsible for the Kirkwood gaps in the asteroid belt and changes in the orbits of comets; it may act as a “sweeper,” pulling in bodies that might otherwise collide with other planets. Jupiter has more than 60 moons (see Galilean satellite) and a diffuse ring system discovered in 1979 by the Voyager spacecraft.",
 		"image": "./assets/images/Jupiter.png"
 	},
 	{
@@ -52,7 +52,7 @@
 		"name": "Saturn",
 		"size": "58,232 km²",
 		"speed": "9.68 km/s",
-		"info": "",
+		"info": "Saturn, Sixth planet from the Sun, named for the Roman god of sowing and seed. The second largest nonstellar object in the solar system after Jupiter, it is about 95 times as massive as Earth and has more than 700 times its volume. Saturn’s outer layers are gaseous, mainly hydrogen. Models of its interior suggest a rock-and-ice core surrounded by a shallow layer of liquid metallic hydrogen encased by an envelope of molecular hydrogen. Its mean density, about 70% that of water, is the lowest of any known object in the solar system. Saturn has over 60 moons (including Titan, the largest) and an extensive ring system, with several main sections visible from Earth with a telescope.",
 		"image": "./assets/images/Saturn.png"
 	},
 	{
@@ -60,7 +60,7 @@
 		"name": "Uranus",
 		"size": "25,362 km²",
 		"speed": "6.80 km/s",
-		"info": "",
+		"info": "Uranus, Seventh planet from the Sun. It was discovered in 1781 by William Herschel (see Herschel family) and named for the Greek god personifying heaven. A blue-green gas giant, it has almost 15 times the mass of Earth and over 50 times its volume. It is less dense than Earth; the gravity at the top of its atmosphere is 11% weaker. Its equatorial diameter is 31,800 mi (51,100 km). Uranus has 10 sharply defined narrow, dark rings, with broad dust bands between them; the rings consist mainly of boulder-size chunks of dark material. Uranus also has at least 27 moons (most named after Shakespearean characters) and a magnetic field about as strong as Earth’s.",
 		"image": "./assets/images/Uranus.png"
 	},
 	{
@@ -68,7 +68,7 @@
 		"name": "Neptune",
 		"size": "24,622 km²",
 		"speed": "5.43 km/s",
-		"info": "",
+		"info": "Neptune, Eighth planet from the Sun, discovered in 1846 and named for the Roman god of the sea. It has an average distance from the Sun of 2.8 billion mi (4.5 billion km), taking nearly 164 years to complete one orbit and rotating every 16.11 hours. Neptune has more than 17 times Earth’s mass, 58 times its volume, and 12% stronger gravity at the top of its atmosphere. It has an equatorial diameter of 30,775 mi (49,528 km). Neptune consists largely of hydrogen and helium. It has no solid surface; its interior is believed to consist of a fluid mixture of rock, ices, and gas.",
 		"image": "./assets/images/Neptune.png"
 	}
 ]
