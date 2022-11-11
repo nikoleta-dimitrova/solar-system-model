@@ -299,7 +299,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 70%;
+    width: 90%;
     height: 15rem;
     background: rgba(107, 27, 173, 0.18);
     border-radius: 5px;
@@ -307,6 +307,7 @@ body {
     backdrop-filter: blur(10.7px);
     -webkit-backdrop-filter: blur(10.7px);
     border: 1px solid rgba(107, 27, 173, 0.5);
+    transition: all .2s ease-in-out;
 }
 
 .planet-card:after {
@@ -321,8 +322,13 @@ body {
     border-color: transparent transparent #150921 transparent;
 }
 
+.planet-card:hover{
+    transform: scale(1.05);
+}
+
 .planet-name{
     margin-top: 1rem;
+    font-weight: 700;
 }
 
 .planet-details {
@@ -336,7 +342,8 @@ body {
 
 .planet-card span {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .planet-speed,
@@ -355,7 +362,7 @@ body {
 
 .planet-speed span,
 .planet-size span {
-    font-size: .7rem;
+    font-size: .8rem;
     margin-left: .1rem;
 }
 
@@ -378,8 +385,8 @@ body {
 
 .planet-popup-container{
     position: absolute;
-    width: 50vw;
-    height: 60vh;
+    width: 60vw;
+    height: 70vh;
     top: 50%;
     left: 0;
     right: 0;
@@ -391,6 +398,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;   
+    font-family: 'Poppins', sans-serif;
 }
 
 .planet-main-info {
@@ -399,14 +407,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 2rem;
 }
 
 .planet-main-info img{
-    height: 50%;
+    height: 55%;
 }
 
 #popup-description {
     width: 100%;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+
+#popup-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
 
 #close {
