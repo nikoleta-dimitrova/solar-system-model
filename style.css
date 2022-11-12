@@ -22,8 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: var(--preview-window-height);
-    width: var(--preview-window-width);
+    width: 50%;
 }
 
 #title {
@@ -35,14 +34,13 @@ body {
 
 #solar-system {
     position: relative;
-    height: var(--preview-window-height);
-    width: var(--preview-window-width);
     margin-top: 3rem;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
+    height: var(--preview-window-height);
 }
 
 #sun {
@@ -61,8 +59,10 @@ body {
     position: absolute;
 }
 
-#sun, .orbit {
+#sun,
+.orbit {
     transform: scale(.09);
+    margin-top: -4rem;
 }
 
 #sun,
@@ -322,11 +322,11 @@ body {
     border-color: transparent transparent #150921 transparent;
 }
 
-.planet-card:hover{
+.planet-card:hover {
     transform: scale(1.05);
 }
 
-.planet-name{
+.planet-name {
     margin-top: 1rem;
     font-weight: 700;
 }
@@ -376,20 +376,21 @@ body {
 
 #planet-popup {
     display: none;
-    position: absolute;
-    width: 200vw;
-    height: 200vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
 }
 
-.planet-popup-container{
+.planet-popup-container {
     position: absolute;
     width: 60vw;
     height: 70vh;
-    top: 50%;
     left: 0;
     right: 0;
+    top: 50%;
     transform: translateY(-50%);
     border-radius: .5rem;
     margin-inline: auto;
@@ -397,7 +398,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;   
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -410,11 +411,11 @@ body {
     margin-left: 2rem;
 }
 
-.planet-main-info img{
-    height: 55%;
+.planet-main-info img {
+    width: 90%;
 }
 
-#popup-description {
+.planet-description {
     width: 100%;
     font-size: .9rem;
     font-weight: 400;
@@ -424,7 +425,7 @@ body {
     text-align: center;
 }
 
-#popup-title{
+#popup-title {
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -438,25 +439,145 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-  }
+}
 
-  #close:hover {
+#close:hover {
     opacity: 1;
-  }
+}
 
-  #close:before, #close:after {
+#close:before,
+#close:after {
     position: absolute;
     content: ' ';
     height: 33px;
     width: 3px;
     background-color: rgb(255, 255, 255);
-  }
+}
 
-  #close:before {
+#close:before {
     transform: rotate(45deg);
-  }
+}
 
-  #close:after {
+#close:after {
     transform: rotate(-45deg);
-  }
-  
+}
+
+
+@media only screen and (max-width: 1280px) {
+    body {
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+    }
+
+    #solar-system {
+        width: 95%;
+    }
+
+    #sun,
+    .orbit {
+        margin-top: -1rem;
+        transform: scale(.1);
+    }
+
+    #info {
+        width: 80%;
+    }
+
+    .planets-container {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #sun,
+    .orbit {
+        transform: scale(.1);
+    }
+
+    .planet-popup-container {
+        flex-direction: column;
+    }
+
+    .planet-description {
+        font-size: clamp(.8rem, 1.5vw, .8rem); 
+    }
+
+    .planet-description {
+        margin-top: -5rem;
+        width: 80%;
+    }
+
+    .planet-main-info img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #sun,
+    .orbit {
+        transform: scale(.08);
+    }
+
+    #solar-system {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .planet-description h2 {
+        display: none;
+    }
+
+    .planet-main-info img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #sun,
+    .orbit {
+        transform: scale(.065);
+    }
+
+    #solar-system {
+        margin-top: -7rem;
+    }
+
+    .planets-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    #sun,
+    .orbit {
+        transform: scale(.055);
+    }
+
+    .planet-popup-container {
+        width: 85%;
+    }
+
+    #popup-title {
+        margin-top: -24rem;
+    }
+
+    #popup-description {
+        margin-top: -20rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .planets-container {
+        grid-template-columns: auto;
+    }
+
+    #sun,
+    .orbit {
+        transform: scale(.04);
+    }
+}

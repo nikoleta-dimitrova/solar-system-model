@@ -79,10 +79,13 @@ closePopupButton.addEventListener('click', () => {
 })
 
 const openPopup = (planet) => {
-        popupImg.src = planet.image;
-        popupTitle.textContent = planet.name;
-        popupDescription.textContent = planet.info;
-        popup.style.display = "block";
+    popupImg.src = planet.image;
+    if (planet.name === "Saturn") {
+        popupImg.style.rotate = "-25deg";
+    }
+    popupTitle.textContent = planet.name;
+    popupDescription.textContent = planet.info;
+    popup.style.display = "block";
 }
 
 const createPlanetCard = (planet) => {
