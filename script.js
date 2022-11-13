@@ -93,9 +93,6 @@ closePopupButton.addEventListener('click', () => {
  // When the user clicks on a planet card, a popup appears displaying additional information
 const openPopup = (planet) => {
     popupImg.src = planet.image;
-    if (planet.name === "Saturn") {
-        popupImg.style.rotate = "-25deg";
-    }
     popupTitle.textContent = planet.name;
     popupDescription.textContent = planet.info;
     popup.style.display = "block";

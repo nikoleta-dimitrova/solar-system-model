@@ -4,7 +4,7 @@
 		"name": "The Sun",
 		"size": "696,340 km²",
 		"speed": "230 km/s",
-		"info": "Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. The Sun is the largest object in our solar system. The Sun’s volume would need 1.3 million Earths to fill it. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The hottest part of the Sun is its core, where temperatures top 27 million degrees Fahrenheit (15 million degrees Celsius). The Sun’s activity, from its powerful eruptions to the steady stream of charged particles it sends out, influences the nature of space throughout the solar system.",
+		"info": "Our Sun is a 4.5 billion-year-old star – a hot glowing ball of hydrogen and helium at the center of our solar system. The Sun is about 93 million miles (150 million kilometers) from Earth, and without its energy, life as we know it could not exist here on our home planet. The Sun is the largest object in our solar system. The Sun’s volume would need 1.3 million Earths to fill it. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The hottest part of the Sun is its core, where temperatures top 27 million degrees Fahrenheit (15 million degrees Celsius).",
 		"image": "./assets/images/Sun.png"
 	},
 	{
@@ -12,7 +12,7 @@
 		"name": "Mercury",
 		"size": "2,439.7 km²",
 		"speed": "47.36 km/s",
-		"info": "Mercury, Innermost planet of the solar system. Its average distance from the Sun is about 36 million mi (58 million km), but its highly elliptical orbit carries it 7.5 million mi (12 million km) nearer to and farther from the Sun. It is the smallest major planet, having a diameter of about 3,030 mi (4,880 km) and a mass about one-eighteenth of Earth’s. With the shortest period of revolution (only 88 Earth days) and the highest average orbital speed (30 mi/sec [48 km/sec]) of any planet, it is aptly named after the Roman fleet-footed messenger god. It spins very slowly, making one complete rotation relative to the stars every 59 Earth days, while its solar day (from one sunrise to the next) is 176 Earth days, owing to its revolution around the Sun.",
+		"info": "Mercury, Innermost planet of the solar system. Its average distance from the Sun is about 36 million mi (58 million km), but its highly elliptical orbit carries it 7.5 million mi (12 million km) nearer to and farther from the Sun. It is the smallest major planet, having a diameter of about 3,030 mi (4,880 km) and a mass about one-eighteenth of Earth’s. With the shortest period of revolution (only 88 Earth days) and the highest average orbital speed (30 mi/sec [48 km/sec]) of any planet, it is aptly named after the Roman fleet-footed messenger god.",
 		"image": "./assets/images/Mercury.png"
 	},
 	{
@@ -20,7 +20,7 @@
 		"name": "Venus",
 		"size": "6,051.8 km²",
 		"speed": "35.02 km/s",
-		"info": "Venus, Second major planet from the Sun. Named for the Roman goddess, Venus is, after the Moon, the most brilliant natural object in the night sky. Venus comes closer to Earth—about 26 million mi (42 million km)—than any other planet. Its orbit around the Sun is nearly circular at a distance of about 67 million mi (108 million km) and takes 225 days; its rotation, in retrograde motion, takes even longer (243 days). As viewed from Earth, Venus undergoes phase changes similar to the Moon’s, going through one cycle of phases in 584 days. It is seen only near sunrise or sunset and has long been known as both the morning star and the evening star. Venus is a near twin of Earth in size and mass but is completely enveloped by thick clouds of concentrated sulfuric acid droplets.",
+		"info": "Venus, Second major planet from the Sun. Named for the Roman goddess, Venus is, after the Moon, the most brilliant natural object in the night sky. Venus comes closer to Earth—about 26 million mi (42 million km)—than any other planet. Its orbit around the Sun is nearly circular at a distance of about 67 million mi (108 million km) and takes 225 days; its rotation, in retrograde motion, takes even longer (243 days). As viewed from Earth, Venus undergoes phase changes similar to the Moon’s, going through one cycle of phases in 584 days. It is seen only near sunrise or sunset and has long been known as both the morning star and the evening star.",
 		"image": "./assets/images/Venus.png"
 	},
 	{
@@ -36,7 +36,7 @@
 		"name": "Mars",
 		"size": "3,389.5 km²",
 		"speed": "24.07 km/s",
-		"info": "Mars, Fourth planet from the Sun, named after the Roman god of war. Its mean distance from the Sun is 228 million km (142 million mi). Its day is 24 hours 37 minutes and its year about 687 Earth days. It has two small moons, Phobos and Deimos. Mars’s equatorial diameter is 3,396 km (2,110 mi), about half that of Earth. Its mass is about one-tenth of Earth’s and its surface gravity about one-third as strong. No magnetic field has been detected on Mars, suggesting, as does its low density, the absence of a substantial metallic core. Like Earth, it has seasons and an atmosphere, but its average daytime surface temperature is only −10 °F (−20 °C). Mars’s thin atmosphere is mainly carbon dioxide, with some nitrogen and argon and traces of water vapour.",
+		"info": "Mars, Fourth planet from the Sun, named after the Roman god of war. Its mean distance from the Sun is 228 million km (142 million mi). Its day is 24 hours 37 minutes and its year about 687 Earth days. It has two small moons, Phobos and Deimos. Mars’s equatorial diameter is 3,396 km (2,110 mi), about half that of Earth. Its mass is about one-tenth of Earth’s and its surface gravity about one-third as strong. No magnetic field has been detected on Mars, suggesting, as does its low density, the absence of a substantial metallic core. Like Earth, it has seasons and an atmosphere, but its average daytime surface temperature is only −10 °F (−20 °C).",
 		"image": "./assets/images/Mars.png"
 	},
 	{

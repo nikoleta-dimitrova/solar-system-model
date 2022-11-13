@@ -496,15 +496,20 @@ body {
     #sun,
     .orbit {
         margin-top: -1rem;
-        transform: scale(.1);
+        transform: scale(.08);
     }
 
     #info {
         width: 80%;
+        height: auto;
     }
 
     .planets-container {
         overflow: hidden;
+    }
+
+    .planet-popup-container {
+        width: 80vw;
     }
 }
 
@@ -512,11 +517,16 @@ body {
 
     #sun,
     .orbit {
-        transform: scale(.1);
+        transform: scale(.07);
     }
 
     .planet-popup-container {
         flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .planet-description h2 {
+        display: none;
     }
 
     .planet-description {
@@ -526,6 +536,10 @@ body {
     .planet-description {
         margin-top: -5rem;
         width: 80%;
+    }
+
+    .planet-main-info {
+        margin: 0;
     }
 
     .planet-main-info img {
@@ -599,5 +613,31 @@ body {
     #sun,
     .orbit {
         transform: scale(.04);
+    }
+}
+
+@media only screen and (max-height: 710px) {
+    #sun,
+    .orbit {
+        transform: scale(.07);
+    }
+
+    .planet-popup-container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-height: 570px) {
+    #sun,
+    .orbit {
+        transform: scale(.06);
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-height: 495px) {
+    #sun,
+    .orbit {
+        transform: scale(.05);
     }
 }
