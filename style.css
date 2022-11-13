@@ -78,7 +78,7 @@ body {
 }
 
 .orbit:nth-of-type(1) .planet {
-    animation: orbit1 1s linear infinite;
+    animation: planet1 1s linear infinite;
     margin-top: 18rem;
     margin-left: 18rem;
     width: calc(var(--sun-size) * 0.3);
@@ -86,7 +86,7 @@ body {
 }
 
 .orbit:nth-of-type(2) .planet {
-    animation: orbit2 2.6s linear infinite;
+    animation: planet2 2.6s linear infinite;
     margin-top: 32rem;
     margin-left: 32rem;
     width: calc(var(--sun-size) * 0.8);
@@ -94,7 +94,7 @@ body {
 }
 
 .orbit:nth-of-type(3) .planet {
-    animation: orbit3 4.1s linear infinite;
+    animation: planet3 4.1s linear infinite;
     margin-top: 53rem;
     margin-left: 53rem;
     width: calc(var(--sun-size) * 0.9);
@@ -102,7 +102,7 @@ body {
 }
 
 .orbit:nth-of-type(4) .planet {
-    animation: orbit4 7.8s linear infinite;
+    animation: planet4 7.8s linear infinite;
     margin-top: 76rem;
     margin-left: 76rem;
     width: calc(var(--sun-size) * 0.4);
@@ -110,7 +110,7 @@ body {
 }
 
 .orbit:nth-of-type(5) .planet {
-    animation: orbit5 49.8s linear infinite;
+    animation: planet5 49.8s linear infinite;
     margin-top: 93rem;
     margin-left: 93rem;
     width: calc(var(--sun-size) * 1.8);
@@ -118,7 +118,7 @@ body {
 }
 
 .orbit:nth-of-type(6) .planet {
-    animation: orbit6 120.3s linear infinite;
+    animation: planet6 120.3s linear infinite;
     margin-top: 142rem;
     margin-left: 132rem;
     width: calc(var(--sun-size) * 2.2);
@@ -126,7 +126,7 @@ body {
 }
 
 .orbit:nth-of-type(7) .planet {
-    animation: orbit7 280.4s linear infinite;
+    animation: planet7 280.4s linear infinite;
     margin-top: 170rem;
     margin-left: 165rem;
     width: calc(var(--sun-size) * 1.5);
@@ -134,7 +134,7 @@ body {
 }
 
 .orbit:nth-of-type(8) .planet {
-    animation: orbit8 800.6s linear infinite;
+    animation: planet8 800.6s linear infinite;
     margin-top: 203rem;
     margin-left: 203rem;
     width: calc(var(--sun-size) * 0.7);
@@ -182,7 +182,7 @@ body {
     height: calc(10.5 * var(--orbit-radius));
 }
 
-@keyframes orbit1 {
+@keyframes planet1 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) / 2)) rotate(0deg);
     }
@@ -192,7 +192,7 @@ body {
     }
 }
 
-@keyframes orbit2 {
+@keyframes planet2 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 2 / 2)) rotate(0deg);
     }
@@ -202,7 +202,7 @@ body {
     }
 }
 
-@keyframes orbit3 {
+@keyframes planet3 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 3 / 2)) rotate(0deg);
     }
@@ -212,7 +212,7 @@ body {
     }
 }
 
-@keyframes orbit4 {
+@keyframes planet4 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 4 / 2)) rotate(0deg);
     }
@@ -222,7 +222,7 @@ body {
     }
 }
 
-@keyframes orbit5 {
+@keyframes planet5 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 5.5 / 2)) rotate(0deg);
     }
@@ -232,7 +232,7 @@ body {
     }
 }
 
-@keyframes orbit6 {
+@keyframes planet6 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 7.5 / 2)) rotate(0deg);
     }
@@ -242,7 +242,7 @@ body {
     }
 }
 
-@keyframes orbit7 {
+@keyframes planet7 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 9 / 2)) rotate(0deg);
     }
@@ -252,7 +252,7 @@ body {
     }
 }
 
-@keyframes orbit8 {
+@keyframes planet8 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) * 10.5 / 2)) rotate(0deg);
     }
