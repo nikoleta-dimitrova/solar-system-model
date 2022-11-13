@@ -3,6 +3,7 @@
     src: url("./assets/fonts/nulshock.otf");
 }
 
+/* Global Variables */
 :root {
     --orbit-radius: 40rem;
     --sun-size: 18rem;
@@ -77,6 +78,10 @@ body {
     pointer-events: none;
 }
 
+ /*
+  Each planet size is calculated according to the size of the sun.
+  The follow different orbits which are made with the animation property 
+ */
 .orbit:nth-of-type(1) .planet {
     animation: planet1 1s linear infinite;
     margin-top: 18rem;
@@ -142,6 +147,8 @@ body {
 
 }
 
+
+/* The size of the orbit is calculated individually for each orbit */
 .orbit:nth-of-type(1) {
     width: calc(1 * var(--orbit-radius));
     height: calc(1 * var(--orbit-radius));
@@ -182,6 +189,8 @@ body {
     height: calc(10.5 * var(--orbit-radius));
 }
 
+
+/* Animations which define the rotation of the planets along their orbits */
 @keyframes planet1 {
     from {
         transform: rotate(0deg) translateX(calc(var(--orbit-radius) / 2)) rotate(0deg);
@@ -276,6 +285,8 @@ body {
     padding-block: 5rem;
 }
 
+
+/* Custom scrollbar for the planet container on the side */
 .planets-container::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -311,6 +322,7 @@ body {
     transition: all .2s ease-in-out;
 }
 
+/* Adds a small triangle to the corner of the planet card */
 .planet-card:after {
     content: '';
     position: absolute;
@@ -464,6 +476,11 @@ body {
 }
 
 
+
+/*
+ Media queries make sure that the solar system is visible from different devices and screen sizes
+ Also dynamically changes the amount of planet cards based on screen size
+*/
 @media only screen and (max-width: 1280px) {
     body {
         flex-direction: column-reverse;
