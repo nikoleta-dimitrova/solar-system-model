@@ -452,6 +452,8 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    height: 2rem;
+    width: 2rem;
 }
 
 #close:hover {
